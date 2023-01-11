@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ball{
+            0%{
+                left: 92vw;
+                top: 7.8vw;
+            }
+            15%{
+                left: 92vw;
+                top: 7.8vw;
+            }
+  
+            25%{
+                left: 37vw;
+                top:37vw
+            }
+            30%{
+                left:29vw;
+                top: 28vw;
+            }
+            45%{
+                left: 92.3vw;
+                top: 4vw;
+            }
+            53%{
+                top: 7.8vw;
+            }
+            84%{
+                left: 92vw;
+                top: 7.8vw;
+            }
+            100%{
+                left: 92vw;
+                top: 7.8vw;
+            }
+
+        }
+        @keyframes bat{
+            0%{
+                transform:rotate(0deg);
+                transform-origin: top right;
+            }
+            25%{
+                transform:rotate(14deg);
+            transform-origin: top right;}
+            30%{
+                transform:translate(5vw) rotate(-69deg);
+                transform-origin: top right;
+                }
+            80%{  transform: translate(0vw)rotate(30deg);
+               transform-origin: top right;}
+            100%{
+               transform: translate(0vw)rotate(0deg);
+               transform-origin: top right;
+              }
+        }
+        @keyframes man {
+            0%{transform:translate(-2vw) rotate(0deg);
+
+            }
+            19%{
+                transform: rotate(-10deg) ;
+               transform-origin: bottom ;
+            }
+            21%{
+
+               transform: rotate(-15deg) ;
+               transform-origin: bottom ;
+            }
+            25%{transform: rotate(-40deg) ;
+               transform-origin: bottom ;
+            }
+           
+            40%{
+               top: 4.5vw;
+            }
+            45%{
+                top:0.3vw;
+                transform: rotate(0deg);
+            }
+            55%{top:4.5vw;}
+
+            75%{
+                transform:  rotate(0deg);
+            }
+            84%{
+                 transform:  rotate(0deg);
+            }
+            100%{ transform:rotate(0deg);}
+        }
+        .field{
+            border: 2px solid indianred;
+        }
+        .ball{
+           width: 2%;
+           position: relative;
+           left :28vw;
+           top: 28vw;
+           animation:ball 7s ease-in 0s infinite;
+           animation-play-state: running;
+}
+        .bat{
+            width:17%;
+            position: relative;
+            top: 30vw;
+            
+            animation: bat 7s ease-in-out 0s infinite ;
+            animation-play-state: running;
+          
+        }
+        .man{
+            width: 35%;
+            position: relative;
+            left: 70vw;
+            top:4vw;
+            animation:man 7s ease-in-out 0s infinite ;
+            animation-play-state: running;
+
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="field">
+    <div class="bat"><img src="./images/pngfind.com-baseball-bat-png-557196.png" alt=""></div>
+   
+    <div class="ball"><img src="./images/ball.png" alt=""></div>
+
+    <div class="man"><img src="./images/man1-removebg-preview.png" alt=""></div>
+</div>
+</body>
+</html>
