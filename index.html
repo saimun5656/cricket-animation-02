@@ -8,35 +8,39 @@
     <style>
         @keyframes ball{
             0%{
-                left: 92vw;
+                left: 89vw;
                 top: 7.8vw;
             }
             15%{
-                left: 92vw;
+                left: 85vw;
                 top: 7.8vw;
             }
+            19%{
+                left: 78vw;
+                top: 10vw;
+            }
   
-            25%{
-                left: 37vw;
-                top:37vw
+            24%{
+                left: 36vw;
+                top:32vw
             }
             30%{
-                left:29vw;
+                left:25vw;
                 top: 28vw;
             }
             45%{
-                left: 92.4vw;
-                top: 4vw;
+                left: 89vw;
+                top: 3vw;
             }
             53%{
                 top: 7.8vw;
             }
             84%{
-                left: 92.4vw;
+                left: 89vw;
                 top: 7.8vw;
             }
             100%{
-                left: 92.4vw;
+                left: 89vw;
                 top: 7.8vw;
             }
 
@@ -61,19 +65,19 @@
               }
         }
         @keyframes man {
-            0%{transform:translate(-2vw) rotate(0deg);
+            0%{transform:translate(0vw) rotate(0deg);
 
             }
-            19%{
+            23%{
                 transform: rotate(-10deg) ;
                transform-origin: bottom ;
             }
-            21%{
+            24%{
 
-               transform: rotate(-15deg) ;
+               transform: rotate(-20deg) ;
                transform-origin: bottom ;
             }
-            25%{transform: rotate(-40deg) ;
+            25%{transform: rotate(-30deg) ;
                transform-origin: bottom ;
             }
            
@@ -81,8 +85,8 @@
                top: 4.2vw;
             }
             45%{
-                top:0.2vw;
-                transform: rotate(0deg);
+                top:-1vw;
+                transform: rotate(2deg);
             }
             55%{top:4.2vw;}
 
@@ -92,36 +96,39 @@
             84%{
                  transform:  rotate(0deg);
             }
-            100%{ transform:rotate(0deg);}
+            100%{ transform:translate(-0vw) rotate(0deg);}
         }
         .field{
             border: 2px solid indianred;
+            margin-left: 20px;
+            
         }
         .ball{
-           width: 2%;
+           width: 1.6%;
            position: relative;
            left :28vw;
            top: 28vw;
-           animation:ball 7s ease-in 0s infinite;
+           animation:ball 5s ease-in 0s infinite;
            animation-play-state: running;
+           z-index: 1;
 }
         .bat{
-            width:17%;
+            width:15%;
             position: relative;
             top: 30vw;
             
-            animation: bat 7s ease-in-out 0s infinite ;
+            animation: bat 5s ease-in-out 0s infinite ;
             animation-play-state: running;
           
         }
         .man{
-            width: 35%;
+            width: 30%;
             position: relative;
             left: 70vw;
             top:4vw;
-            animation:man 7s ease-in-out 0s infinite ;
+            animation:man 5s ease-in-out 0s infinite ;
             animation-play-state: running;
-
+            z-index: 0;
         }
         img{
             width: 100%;
